@@ -1,0 +1,14 @@
+{
+  "name": "retrieval-service",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "aws-sdk": "^2.763.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^4.9.4",
+    "serverless-s3-local": "^0.4.1",
+    "serverless-dynamodb-local": "^0.2.37"
+  }
+}
