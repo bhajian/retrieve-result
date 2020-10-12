@@ -14,10 +14,17 @@ module.exports.handle = async (event, context, callback) => {
         },
     };
     try {
-        console.log(JSON.stringify(params));
         const data = await dynamoDb.get(params).promise();
         console.log(JSON.stringify(data));
-        return callback(null, {result: data});
+        const response = {
+            statusCode: 200,
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Credentials': true,
+            },
+            body: JSON.stringify(data),
+        };
+        return callback(null, response);
     } catch (error) {
         callback(error);
     }

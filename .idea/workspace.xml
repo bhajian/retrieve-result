@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70f0d2da-6b19-4ac2-bb8f-954f97677f44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/retrieve-result.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-create-stack.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.serverless/retrieve-result.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.serverless/serverless-state.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602468924637</updated>
-      <workItem from="1602468925683" duration="1024000" />
+      <workItem from="1602468925683" duration="1356000" />
+      <workItem from="1602470722737" duration="36000" />
     </task>
     <servers />
   </component>
@@ -79,8 +74,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1061" height="209" key="GridCell.Tab.0.bottom" timestamp="1602470626649">
+      <screen x="-2560" y="-633" width="2560" height="1417" />
+    </state>
+    <state width="1061" height="209" key="GridCell.Tab.0.bottom/0.23.1440.877/-5052.-562.2492.1417/-2560.-633.2560.1417@-2560.-633.2560.1417" timestamp="1602470626649" />
+    <state width="1061" height="209" key="GridCell.Tab.0.center" timestamp="1602470626648">
+      <screen x="-2560" y="-633" width="2560" height="1417" />
+    </state>
+    <state width="1061" height="209" key="GridCell.Tab.0.center/0.23.1440.877/-5052.-562.2492.1417/-2560.-633.2560.1417@-2560.-633.2560.1417" timestamp="1602470626648" />
+    <state width="1061" height="209" key="GridCell.Tab.0.left" timestamp="1602470626647">
+      <screen x="-2560" y="-633" width="2560" height="1417" />
+    </state>
+    <state width="1061" height="209" key="GridCell.Tab.0.left/0.23.1440.877/-5052.-562.2492.1417/-2560.-633.2560.1417@-2560.-633.2560.1417" timestamp="1602470626647" />
+    <state width="1061" height="209" key="GridCell.Tab.0.right" timestamp="1602470626649">
+      <screen x="-2560" y="-633" width="2560" height="1417" />
+    </state>
+    <state width="1061" height="209" key="GridCell.Tab.0.right/0.23.1440.877/-5052.-562.2492.1417/-2560.-633.2560.1417@-2560.-633.2560.1417" timestamp="1602470626649" />
   </component>
 </project>
