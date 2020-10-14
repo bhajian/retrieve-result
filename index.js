@@ -1,14 +1,24 @@
 'use strict';
 
 const AWS = require('aws-sdk');
+var path = require('path');
+
 const { REGION: region, S3_BUCKET_NAME: bucketName,
-    FILE_TABLE_NAME: fileTableName} = process.env;
+    SSM_PATH: ssmPath} = process.env;
 AWS.config.update({region: region});
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
+const ssm = new AWS.SSM();
 
 module.exports.handle = async (event, context, callback) => {
+
+    let req = {
+        Name: path.join(ssmPath, 'FILE_TABLE_NAME'),
+        WithDecryption: false
+    };
+    const data = await ssm.getParameter(req).promise();
+
     const params = {
-        TableName: fileTableName,
+        TableName: data.Parameter.Value,
         Key: {
             ID: event.pathParameters.id,
         },

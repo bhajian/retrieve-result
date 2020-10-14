@@ -19,7 +19,8 @@
             "dynamodb:GetItem",
             "dynamodb:PutItem",
             "s3:PutObject",
-            "s3:GetObject"
+            "s3:GetObject",
+            "ssm:GetParameter"
           ],
           "Resource": "*"
         }
@@ -176,7 +177,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/retrieve-result/dev/1602470774853-2020-10-12T02:46:14.853Z/retrieve-result.zip"
+                "S3Key": "serverless/retrieve-result/dev/1602713358681-2020-10-14T22:09:18.681Z/retrieve-result.zip"
               },
               "FunctionName": "retrieve-result-dev-business",
               "Handler": "index.handle",
@@ -192,9 +193,9 @@
               "Description": "business retrieval service.",
               "Environment": {
                 "Variables": {
-                  "FILE_TABLE_NAME": "Image_Classification",
                   "S3_BUCKET_NAME": "classification-bucket-0009-6572-9629",
-                  "REGION": "ca-central-1"
+                  "REGION": "ca-central-1",
+                  "SSM_PATH": "/image-classification/dev/20201014/"
                 }
               }
             },
@@ -202,14 +203,14 @@
               "BusinessLogGroup"
             ]
           },
-          "BusinessLambdaVersionvU09TdAh76g5NdZRShMFhYkzFlQmwTZeUTYXXTssIE": {
+          "BusinessLambdaVersionQgk8fQcNzhBW5vYSeogoSpTZFduE4GMlJHcG620": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "BusinessLambdaFunction"
               },
-              "CodeSha256": "RjAE67NwqYS7zmIeeNJLuGGoGC3BKGaaOq1I3nmxnHg=",
+              "CodeSha256": "BF/JXX2/GsIeYssQAS2c+/rMEvjuCSLicetmIOtf/4U=",
               "Description": "business retrieval service."
             }
           },
@@ -354,7 +355,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1602470770029": {
+          "ApiGatewayDeployment1602713353194": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -414,7 +415,7 @@
           "BusinessLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "BusinessLambdaVersionvU09TdAh76g5NdZRShMFhYkzFlQmwTZeUTYXXTssIE"
+              "Ref": "BusinessLambdaVersionQgk8fQcNzhBW5vYSeogoSpTZFduE4GMlJHcG620"
             }
           },
           "ServiceEndpoint": {
@@ -552,16 +553,16 @@
           }
         ],
         "environment": {
-          "FILE_TABLE_NAME": "Image_Classification",
           "S3_BUCKET_NAME": "classification-bucket-0009-6572-9629",
-          "REGION": "ca-central-1"
+          "REGION": "ca-central-1",
+          "SSM_PATH": "/image-classification/dev/20201014/"
         },
         "name": "retrieve-result-dev-business",
         "package": {},
         "memory": 1028,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "BusinessLambdaVersionvU09TdAh76g5NdZRShMFhYkzFlQmwTZeUTYXXTssIE"
+        "versionLogicalId": "BusinessLambdaVersionQgk8fQcNzhBW5vYSeogoSpTZFduE4GMlJHcG620"
       }
     },
     "configValidationMode": "warn",
@@ -572,7 +573,7 @@
       "package": {
         "individually": false,
         "artifact": "/Users/bhhajian/workspace/retrieve-result/.serverless/retrieve-result.zip",
-        "artifactDirectoryName": "serverless/retrieve-result/dev/1602470774853-2020-10-12T02:46:14.853Z"
+        "artifactDirectoryName": "serverless/retrieve-result/dev/1602713358681-2020-10-14T22:09:18.681Z"
       },
       "provider": {
         "name": "aws",
@@ -588,7 +589,8 @@
               "dynamodb:GetItem",
               "dynamodb:PutItem",
               "s3:PutObject",
-              "s3:GetObject"
+              "s3:GetObject",
+              "ssm:GetParameter"
             ],
             "Resource": "*"
           }
@@ -603,7 +605,7 @@
   },
   "package": {
     "individually": false,
-    "artifactDirectoryName": "serverless/retrieve-result/dev/1602470774853-2020-10-12T02:46:14.853Z",
+    "artifactDirectoryName": "serverless/retrieve-result/dev/1602713358681-2020-10-14T22:09:18.681Z",
     "artifact": "retrieve-result.zip"
   }
 }

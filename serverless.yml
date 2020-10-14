@@ -17,6 +17,7 @@ provider:
         - dynamodb:PutItem
         - s3:PutObject
         - s3:GetObject
+        - ssm:GetParameter
       Resource: "*"
 
 functions:
@@ -35,6 +36,6 @@ functions:
                 id: true
           cors: true
     environment:
-      FILE_TABLE_NAME: Image_Classification
       S3_BUCKET_NAME: "classification-bucket-0009-6572-9629"
       REGION: "ca-central-1"
+      SSM_PATH: "/image-classification/dev/20201014/"

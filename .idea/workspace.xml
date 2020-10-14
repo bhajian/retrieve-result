@@ -21,8 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="70f0d2da-6b19-4ac2-bb8f-954f97677f44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/cloudformation-template-update-stack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/retrieve-result.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/retrieve-result.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/serverless-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/serverless-state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,9 @@
       <option name="presentableId" value="Default" />
       <updated>1602468924637</updated>
       <workItem from="1602468925683" duration="1356000" />
-      <workItem from="1602470722737" duration="36000" />
+      <workItem from="1602470722737" duration="144000" />
+      <workItem from="1602692985578" duration="325000" />
+      <workItem from="1602711385424" duration="1187000" />
     </task>
     <servers />
   </component>
